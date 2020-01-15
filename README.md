@@ -1,2 +1,7 @@
 # dotfiles
-my config files.
+
+我的一些配置文件。
+
+## 使用方法
+
+项目基于stow工具进行配置。
