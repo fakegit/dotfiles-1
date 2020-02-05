@@ -1,0 +1,7 @@
+[http]
+	proxy = http://localhost:10800
+[user]
+	name = techstay
+	email = lovery521@gmail.com
+[i18n]
+	filesEncoding = utf-8
