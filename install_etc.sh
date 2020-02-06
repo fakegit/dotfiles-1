@@ -16,12 +16,6 @@ if [ "$prompt" = 'y' ] || [ "$prompt" = 'Y' ]; then
     sed -i '1i Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch' /etc/pacman.d/mirrorlist
 fi
 
-read -rp "是否安装nano配置文件(y/N)?" prompt
-if [ "$prompt" = 'y' ] || [ "$prompt" = 'Y' ]; then
-    wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
-    echo "include $HOME/.nano/*.nanorc" >>/etc/nanorc
-fi
-
 read -rp "是否添加全局代理环境变量(localhost:10800)(y/N)?" prompt
 if [ "$prompt" = 'y' ] || [ "$prompt" = 'Y' ]; then
     cp proxy/proxy666.sh /etc/profile.d/
