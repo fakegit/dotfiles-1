@@ -25,7 +25,7 @@ git clone https://github.com/techstay/dotfiles.git
 
 ```sh
 cd dotfiles
-stow git gradle maven npm ruby ssh vimbasic zsh
+stow git gradle maven npm ruby ssh vimbasic zsh anaconda
 ```
 
 ### 全局配置
