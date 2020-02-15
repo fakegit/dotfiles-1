@@ -36,3 +36,11 @@ stow git gradle maven npm ruby ssh vimbasic zsh anaconda
 sudo install.sh
 ```
 
+### Windows Terminal
+
+需要先安装更纱黑体。
+
+```powershell
+Copy-Item 'windowsterminal\profiles.json' '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState'
+```
+
