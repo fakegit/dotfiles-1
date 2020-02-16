@@ -2,7 +2,7 @@
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "globals": {
         "alwaysShowTabs": true,
-        "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "initialCols": 120,
         "initialRows": 30,
         "keybindings": [{
@@ -174,7 +174,7 @@
         "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
     },
     "profiles": [{
-            "acrylicOpacity": 0.7,
+            "acrylicOpacity": 0.85,
             "background": "#012456",
             "closeOnExit": true,
             "colorScheme": "Campbell",
@@ -215,6 +215,18 @@
             "hidden": false,
             "name": "Azure Cloud Shell",
             "source": "Windows.Terminal.Azure"
+        },
+        {
+            "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+            "hidden": false,
+            "name": "PowerShell",
+            "source": "Windows.Terminal.PowershellCore",
+            "fontFace": "等距更纱黑体 SC",
+            "fontSize": 10,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.85,
+            "colorScheme": "Solarized Dark",
+            "background": "#012456"
         }
     ],
     "schemes": [{

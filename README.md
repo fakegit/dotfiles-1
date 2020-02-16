@@ -44,3 +44,8 @@ sudo install.sh
 Copy-Item 'windowsterminal\profiles.json' '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState'
 ```
 
+如果只需要Windows Terminal配置文件，可以直接下载并覆盖默认配置文件。
+
+```powershell
+Invoke-WebRequest -uri 'https://gitee.com/techstay/dotfiles/raw/master/windowsterminal/profiles.json' |Select-Object -ExpandProperty Content|Set-Content '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json'
+```
