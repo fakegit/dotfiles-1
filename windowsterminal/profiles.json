@@ -8,7 +8,7 @@
         "keybindings": [{
                 "command": "closeTab",
                 "keys": [
-                    "ctrl+w"
+                    "alt+f4"
                 ]
             },
             {
