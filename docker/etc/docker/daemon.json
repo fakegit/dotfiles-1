@@ -1,7 +1,6 @@
 {
     "registry-mirrors": [
         "https://68vapi3g.mirror.aliyuncs.com",
-        "https://dockerhub.azk8s.cn",
-        "https://reg-mirror.qiniu.com"
+        "https://dockerhub.azk8s.cn"
     ]
 }
