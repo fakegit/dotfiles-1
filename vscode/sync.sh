@@ -1,6 +1,6 @@
 #! /bin/bash
 
-linux_config_path="$HOME/.config/Code/User"
+linux_config_path="$HOME/.config/Code - OSS/User"
 
 mkdir -p "$linux_config_path"
 
