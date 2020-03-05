@@ -25,8 +25,12 @@ git clone https://github.com/techstay/dotfiles.git
 
 ```sh
 cd dotfiles
-stow git gradle maven npm ruby ssh vimbasic zsh anaconda
+stow git gradle maven npm ruby ssh vimbasic zsh anaconda fcitx
 ```
+
+#### vscode
+
+vscode文件夹下有配置脚本，用于在本项目和配置文件之间同步，脚本有两个参数，pull参数将配置文件覆盖到本地，push用本地的配置文件覆盖项目中的备份。
 
 ### 全局配置
 
