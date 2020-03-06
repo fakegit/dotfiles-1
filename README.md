@@ -30,7 +30,26 @@ stow git gradle maven npm ruby ssh vimbasic zsh anaconda fcitx
 
 #### vscode
 
-vscode文件夹下有配置脚本，用于在本项目和配置文件之间同步，脚本有两个参数，pull参数将配置文件覆盖到本地，push用本地的配置文件覆盖项目中的备份。
+导出已安装的扩展列表。
+
+```sh
+code --list-extension > extensions.txt
+```
+
+从扩展列表安装扩展。
+
+```sh
+cat extensions.txt | grep -v '^#' | xargs -L1 code --install-extension
+```
+
+复制配置文件。
+
+```sh
+# Windows
+Copy-Item settings.json -Destination "${env:APPDATA}\Code\User"
+# Linux
+cp settings.json "$HOME/.config/Code - OSS/User"
+```
 
 ### 全局配置
 
