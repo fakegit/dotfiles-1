@@ -13,8 +13,6 @@ sudo pacman -S stow
 sudo apt install stow
 ```
 
-### 本地配置
-
 首先克隆本项目到用户家目录下。
 
 ```bash
@@ -28,7 +26,7 @@ cd dotfiles
 stow git gradle maven npm ruby ssh vimbasic zsh anaconda fcitx
 ```
 
-#### vscode
+### vscode
 
 导出已安装的扩展列表。
 
@@ -49,14 +47,6 @@ cat extensions.txt | grep -v '^#' | xargs -L1 code --install-extension
 Copy-Item settings.json -Destination "${env:APPDATA}\Code\User"
 # Linux
 cp settings.json "$HOME/.config/Code - OSS/User"
-```
-
-### 全局配置
-
-需要使用sudo命令运行`install.sh`脚本，然后根据脚本选择要安装到`/etc/`目录的配置文件。
-
-```sh
-sudo install.sh
 ```
 
 ### Windows Terminal
