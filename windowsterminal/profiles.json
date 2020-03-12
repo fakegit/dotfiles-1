@@ -225,8 +225,20 @@
             "fontSize": 10,
             "useAcrylic": true,
             "acrylicOpacity": 0.85,
-            "colorScheme": "Solarized Dark",
+            "colorScheme": "Campbell",
             "background": "#012456"
+        },
+        {
+            "guid": "{cbcc2468-c750-459a-964f-d893042386a1}",
+            "hidden": false,
+            "name": "Git Bash",
+            "commandline": "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l",
+            "fontFace": "等距更纱黑体 SC",
+            "fontSize": 10,
+            "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.85,
+            "colorScheme": "Campbell"
         }
     ],
     "schemes": [{
