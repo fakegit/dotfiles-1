@@ -167,3 +167,27 @@ cd
 curl -L git.io/antigen >.antigen.zsh
 wget https://raw.githubusercontent.com/techstay/dotfiles/master/zsh/.zshrc
 wget https://raw.githubusercontent.com/techstay/dotfiles/master/zsh/.p10k.zsh
+
+#                                  _
+#                                 (_)
+#   ___ _ __   __ _  ___ _____   ___ _ __ ___
+#  / __| '_ \ / _` |/ __/ _ \ \ / / | '_ ` _ \
+#  \__ \ |_) | (_| | (_|  __/\ V /| | | | | | |
+#  |___/ .__/ \__,_|\___\___| \_/ |_|_| |_| |_|
+#      | |
+#      |_|
+
+curl -sLf https://spacevim.org/install.sh | bash
+
+#   _ __   __ _ _ __   ___
+#  | '_ \ / _` | '_ \ / _ \
+#  | | | | (_| | | | | (_) |
+#  |_| |_|\__,_|_| |_|\___/
+
+install_path=/usr/share/nano-syntax-highlighting
+
+sudo git clone https://github.com/scopatz/nanorc.git $install_path
+# 如果是Arch不需要克隆项目，直接安装包即可
+sudo pacman -S nano-syntax-highlighting
+
+echo "include $install_path/*.nanorc" | sudo tee -a /etc/nanorc
