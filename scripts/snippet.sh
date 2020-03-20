@@ -80,6 +80,19 @@ EOL
 
 sudo dnf update
 
+#   _         _ _   _ _
+#  | |       | (_) | (_)
+#  | | ____ _| |_  | |_ _ __  _   ___  __
+#  | |/ / _` | | | | | | '_ \| | | \ \/ /
+#  |   < (_| | | | | | | | | | |_| |>  <
+#  |_|\_\__,_|_|_| |_|_|_| |_|\__,_/_/\_\
+
+sudo cp /etc/apt/sources.list{,.backup}
+sudo tee /etc/apt/sources.list <<EOL
+deb https://mirrors.tuna.tsinghua.edu.cn/kali/ kali-rolling main non-free contrib
+deb-src https://mirrors.tuna.tsinghua.edu.cn/kali/ kali-rolling main non-free contrib
+EOL
+
 #                      _     _
 #                     | |   (_)
 #  _ __ __ _ ___ _ __ | |__  _  __ _ _ __
