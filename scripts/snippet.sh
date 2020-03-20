@@ -158,7 +158,7 @@ EOL
 sudo sed -i 's/^# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/g' /etc/locale.gen
 sudo sed -i 's/^#zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/g' /etc/locale.gen
 sudo locale-gen
-sudo localectl set-locale zh_CN.UTF-8
+sudo localectl set-locale LANG=zh_CN.UTF-8
 echo 'LANG=zh_CN.UTF-8' | sudo tee /etc/locale.conf
 sudo timedatectl set-timezone Asia/Shanghai
 sudo timedatectl set-ntp 1
