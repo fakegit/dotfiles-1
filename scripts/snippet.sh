@@ -80,6 +80,19 @@ EOL
 
 sudo dnf update
 
+#   _         _ _   _ _
+#  | |       | (_) | (_)
+#  | | ____ _| |_  | |_ _ __  _   ___  __
+#  | |/ / _` | | | | | | '_ \| | | \ \/ /
+#  |   < (_| | | | | | | | | | |_| |>  <
+#  |_|\_\__,_|_|_| |_|_|_| |_|\__,_/_/\_\
+
+sudo cp /etc/apt/sources.list{,.backup}
+sudo tee /etc/apt/sources.list <<EOL
+deb https://mirrors.tuna.tsinghua.edu.cn/kali/ kali-rolling main non-free contrib
+deb-src https://mirrors.tuna.tsinghua.edu.cn/kali/ kali-rolling main non-free contrib
+EOL
+
 #                      _     _
 #                     | |   (_)
 #  _ __ __ _ ___ _ __ | |__  _  __ _ _ __
@@ -145,7 +158,7 @@ EOL
 sudo sed -i 's/^# zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/g' /etc/locale.gen
 sudo sed -i 's/^#zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/g' /etc/locale.gen
 sudo locale-gen
-sudo localectl set-locale zh_CN.UTF-8
+sudo localectl set-locale LANG=zh_CN.UTF-8
 echo 'LANG=zh_CN.UTF-8' | sudo tee /etc/locale.conf
 sudo timedatectl set-timezone Asia/Shanghai
 sudo timedatectl set-ntp 1
@@ -167,3 +180,27 @@ cd
 curl -L git.io/antigen >.antigen.zsh
 wget https://raw.githubusercontent.com/techstay/dotfiles/master/zsh/.zshrc
 wget https://raw.githubusercontent.com/techstay/dotfiles/master/zsh/.p10k.zsh
+
+#                                  _
+#                                 (_)
+#   ___ _ __   __ _  ___ _____   ___ _ __ ___
+#  / __| '_ \ / _` |/ __/ _ \ \ / / | '_ ` _ \
+#  \__ \ |_) | (_| | (_|  __/\ V /| | | | | | |
+#  |___/ .__/ \__,_|\___\___| \_/ |_|_| |_| |_|
+#      | |
+#      |_|
+
+curl -sLf https://spacevim.org/install.sh | bash
+
+#   _ __   __ _ _ __   ___
+#  | '_ \ / _` | '_ \ / _ \
+#  | | | | (_| | | | | (_) |
+#  |_| |_|\__,_|_| |_|\___/
+
+install_path=/usr/share/nano-syntax-highlighting
+
+sudo git clone https://github.com/scopatz/nanorc.git $install_path
+# 如果是Arch不需要克隆项目，直接安装包即可
+sudo pacman -S nano-syntax-highlighting
+
+echo "include $install_path/*.nanorc" | sudo tee -a /etc/nanorc

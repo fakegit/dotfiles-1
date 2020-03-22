@@ -63,6 +63,12 @@ Copy-Item 'windowsterminal\profiles.json' '~\AppData\Local\Packages\Microsoft.Wi
 Invoke-WebRequest -uri 'https://gitee.com/techstay/dotfiles/raw/master/windowsterminal/profiles.json' |Select-Object -ExpandProperty Content|Set-Content '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json'
 ```
 
+备份配置文件。
+
+```powershell
+Copy-Item '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json' windowsterminal
+```
+
 ## 一些配置脚本
 
 脚本文件在scripts下。
