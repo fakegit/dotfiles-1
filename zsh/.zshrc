@@ -5,12 +5,34 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/.antigen.zsh
+#source ~/.antigen.zsh
+source /usr/share/zsh-antigen/antigen.zsh
 antigen use oh-my-zsh
+
+function _z() { _zlua "$@"; }
+
 antigen bundle command-not-found
+antigen bundle skywind3000/z.lua
+antigen bundle changyuheng/fz
+antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle autopep8
+antigen bundle cargo
+antigen bundle docker
+antigen bundle dotnet
+antigen bundle emoji
+antigen bundle git-auto-fetch
+antigen bundle gradle
+antigen bundle npm
+antigen bundle python
+antigen bundle ruby
+antigen bundle sudo
+antigen bundle thefuck
+antigen bundle ufw
+antigen bundle vscode
+
 antigen theme romkatv/powerlevel10k
 antigen apply
 
