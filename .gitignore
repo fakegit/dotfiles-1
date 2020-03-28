@@ -1,0 +1,9 @@
+# gradle files
+gradle/.gradle/*
+!gradle/.gradle/gradle.properties
+!gradle/.gradle/init.gradle
+
+# fcitx files
+fcitx/.config/fcitx/*
+!fcitx/.config/fcitx/conf
+!fcitx/.config/fcitx/config
