@@ -11,9 +11,9 @@ antigen use oh-my-zsh
 
 function _z() { _zlua "$@"; }
 
-antigen bundle command-not-found
 antigen bundle skywind3000/z.lua
 antigen bundle changyuheng/fz
+antigen bundle command-not-found
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
@@ -32,6 +32,8 @@ antigen bundle sudo
 antigen bundle thefuck
 antigen bundle ufw
 antigen bundle vscode
+antigen bundle archlinux
+antigen bundle systemd
 
 antigen theme romkatv/powerlevel10k
 antigen apply

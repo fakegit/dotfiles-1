@@ -3,3 +3,5 @@
 	email = lovery521@gmail.com
 [i18n]
 	filesEncoding = utf-8
+[rerere]
+	enabled = true
