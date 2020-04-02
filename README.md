@@ -23,7 +23,7 @@ git clone https://github.com/techstay/dotfiles.git
 
 ```sh
 cd dotfiles
-stow git gradle maven npm ruby ssh vimbasic zsh anaconda fcitx
+stow git gradle maven npm ruby ssh vimbasic zsh anaconda fcitx pip
 ```
 
 ### vscode
