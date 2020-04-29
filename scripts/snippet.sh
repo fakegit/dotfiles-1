@@ -52,9 +52,11 @@ sudo zypper update
 # |_| \___|\__,_|\___/|_|  \__,_|
 #
 
-# Fedora镜像源
+# Fedora镜像源，适用于Fedora 30及更新
 sudo cp /etc/yum.repos.d/fedora.repo{,.backup}
 sudo cp /etc/yum.repos.d/fedora-updates.repo{,.backup}
+sudo cp /etc/yum.repos.d/fedora-modular.repo{,.backup}
+sudo cp /etc/yum.repos.d/fedora-updates-modular.repo{,.backup}
 sudo tee /etc/yum.repos.d/fedora.repo <<EOL
 [fedora]
 name=Fedora \$releasever - \$basearch
@@ -78,6 +80,29 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-\$releasever-\$basearch
 skip_if_unavailable=False
 EOL
 
+sudo tee /etc/yum.repos.d/fedora-modular.repo <<EOL
+[fedora-modular]
+name=Fedora Modular \$releasever - \$basearch
+failovermethod=priority
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora/releases/\$releasever/Modular/\$basearch/os/
+enabled=1
+metadata_expire=7d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-\$releasever-\$basearch
+skip_if_unavailable=False
+EOL
+
+sudo tee /etc/yum.repos.d/fedora-updates-modular.repo <<EOL
+[updates-modular]
+name=Fedora Modular \$releasever - \$basearch - Updates
+failovermethod=priority
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/fedora/updates/\$releasever/Modular/\$basearch/
+enabled=1
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-\$releasever-\$basearch
+skip_if_unavailable=False
+EOL
 sudo dnf update
 
 #   _         _ _   _ _
