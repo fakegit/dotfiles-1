@@ -54,19 +54,19 @@ cp settings.json "$HOME/.config/Code - OSS/User"
 需要先安装更纱黑体。
 
 ```powershell
-Copy-Item 'windowsterminal\profiles.json' '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState'
+Copy-Item 'windowsterminal\settings.json' '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState'
 ```
 
 如果只需要Windows Terminal配置文件，可以直接下载并覆盖默认配置文件。
 
 ```powershell
-Invoke-WebRequest -uri 'https://gitee.com/techstay/dotfiles/raw/master/windowsterminal/profiles.json' |Select-Object -ExpandProperty Content|Set-Content '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json'
+Invoke-WebRequest -uri 'https://gitee.com/techstay/dotfiles/raw/master/windowsterminal/settings.json' |Select-Object -ExpandProperty Content|Set-Content '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json'
 ```
 
 备份配置文件。
 
 ```powershell
-Copy-Item '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json' windowsterminal
+Copy-Item '~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json' windowsterminal
 ```
 
 ## 一些配置脚本
