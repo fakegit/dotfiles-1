@@ -26,6 +26,50 @@ cd dotfiles
 stow git gradle maven npm ruby ssh vimbasic anaconda pip
 ```
 
+### antigen
+
+如果准备使用antigen来配置zsh,在dotfiles目录里执行以下命令.
+
+```sh
+stow zsh
+```
+
+然后输入`zsh`并等待antigen配置完成.最后使用`chsh -s /bin/zsh`把终端切换成zsh即可.
+
+### prezto
+
+如果准备使用prezto配置zsh,那么就稍稍复杂一些.首先依次输入以下命令安装prezto.
+
+```sh
+# 首先进入zsh终端
+zsh
+# 克隆项目
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+# 将配置文件链接出来
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+# 修改终端
+chsh -s /bin/zsh
+```
+
+因为这里要用stow的配置文件而不是prezto的文件做链接,所以要先删除这几个文件.
+
+```sh
+cd ~
+rm .zshrc .zpreztorc .p10k.zsh
+```
+
+然后就能用stow了.
+
+```sh
+cd dotfiles
+stow pzsh
+```
+
+## 其他软件配置文件
+
 ### vscode
 
 因为VSCode现在官方内置了同步功能,所以这里的东西可以说是再也没用了,仅仅留作纪念.
