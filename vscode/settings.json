@@ -1,55 +1,142 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontFamily": "'Jetbrains Mono','Fira Code','MesloLGS NF','思源黑体',Consolas, 'Courier New', monospace",
-    "editor.fontSize": 18,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[julia]": {
+        //  "editor.defaultFormatter": "julialang.language-julia"
+        "editor.defaultFormatter": "singularitti.vscode-julia-formatter"
+    },
+    "dart.checkForSdkUpdates": false,
+    "dart.flutterSdkPath": "C:\\Users\\asddf\\scoop\\apps\\flutter\\1.12.13-hotfix.9",
+    "debug.onTaskErrors": "showErrors",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "editor.fontFamily": "'Jetbrains Mono', '思源黑体', Consolas, monospace",
     "editor.fontLigatures": true,
+    "editor.fontSize": 18,
     "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true
+    },
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableCommitSigning": true,
+    "go.formatTool": "goimports",
+    "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true,
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "julia.enableTelemetry": true,
+    "julia.symbolCacheDownload": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "markdown-preview-enhanced.liveUpdate": true,
+    "powershell.promptToUpdatePowerShell": false,
+    "python.languageServer": "Pylance",
+    "redhat.telemetry.enabled": true,
     "remote.SSH.defaultExtensions": [
         "eamodio.gitlens",
         "mutantdino.resourcemonitor",
         "hookyqr.beautify",
         "ms-vscode.cpptools",
-        "ms-vscode.csharp",
+        "ms-dotnettools.csharp",
         "ms-vscode.go",
         "ms-python.python",
         "redhat.vscode-yaml",
         "formulahendry.code-runner",
-        "foxundermoon.shell-format",
+        "foxundermoon.shell-format"
     ],
-    "files.autoSave": "onFocusChange",
-    "julia.enableTelemetry": true,
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+    "remote.SSH.remotePlatform": {
+        "arch": "linux",
+        "hostwind": "linux",
+        "manjaro": "linux",
+        "rasp": "linux",
+        "ubuntu": "linux"
     },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "explorer.confirmDelete": false,
-    "python.jediEnabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "vsicons.dontShowNewVersionMessage": true,
-    "debug.onTaskErrors": "showErrors",
-    "markdown-preview-enhanced.liveUpdate": true,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "git.autofetch": true,
-    "vim.easymotion": true,
-    "vim.sneak": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "terminal.integrated.shell.linux": "/bin/zsh",
-    "window.zoomLevel": 0,
-    "ruby.format": "rubocop",
     "ruby.codeCompletion": "rcodetools",
+    "ruby.format": "rubocop",
     "ruby.intellisense": "rubyLocate",
     "ruby.useLanguageServer": true,
-    "terminal.integrated.rendererType": "canvas",
-    "workbench.colorTheme": "Andromeda Colorizer",
-    "go.formatTool": "goimports",
-    "go.useLanguageServer": true,
-    "git.enableCommitSigning": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "terminal.integrated.enableBell": true,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "after": [
+                "<Esc>"
+            ],
+            "before": [
+                "j",
+                "j"
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "after": [
+                "d",
+                "d"
+            ],
+            "before": [
+                "<leader>",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        }
+    ],
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.fontFamily": "Hack"
 }
