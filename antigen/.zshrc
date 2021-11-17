@@ -43,8 +43,6 @@ antigen apply
 
 # your code here
 
-export GOPROXY=https://mirrors.aliyun.com/goproxy/
-
 alias el='exa -l'
 alias ea='exa -la'
 alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
