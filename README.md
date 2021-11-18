@@ -31,7 +31,7 @@ stow git gradle maven npm ruby ssh vimbasic anaconda pip
 如果准备使用antigen来配置zsh,在dotfiles目录里执行以下命令.
 
 ```sh
-stow zsh
+stow antigen
 ```
 
 然后输入`zsh`并等待antigen配置完成.最后使用`chsh -s /bin/zsh`把终端切换成zsh即可.
