@@ -1,0 +1,44 @@
+{
+    "!root-password": "123456",
+    "bootloader": "grub-install",
+    "custom-commands": [
+        "usermod -aG docker techstay",
+        "sed -i 's/^#Color/Color/g' /etc/pacman.conf",
+        "mkdir -p /etc/sudoers.d; echo 'techstay ALL=(ALL) NOPASSWD: ALL' | sudo tee '/etc/sudoers.d/techstay'"
+    ],
+    "filesystem": "btrfs",
+    "harddrive": {
+        "path": "/dev/sda"
+    },
+    "hostname": "ArchLinux",
+    "kernels": [
+        "linux"
+    ],
+    "keyboard-language": "us",
+    "mirror-region": "China",
+    "nic": {
+        "NetworkManager": true
+    },
+    "ntp": true,
+    "packages": [
+        "docker",
+        "git",
+        "wget",
+        "zsh",
+        "openssh"
+    ],
+    "profile": "minimal",
+    "services": [
+        "docker",
+        "sshd"
+    ],
+    "superusers": {},
+    "sys-encoding": "utf-8",
+    "sys-language": "zh_CN",
+    "timezone": "Asia/Shanghai",
+    "users": {
+        "techstay": {
+            "!password": "123456"
+        }
+    }
+}
