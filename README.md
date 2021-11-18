@@ -45,7 +45,7 @@ stow antigen
 导出已安装的扩展列表。
 
 ```sh
-code --list-extension > extensions.txt
+code --list-extensions > extensions.txt
 ```
 
 从扩展列表安装扩展。
