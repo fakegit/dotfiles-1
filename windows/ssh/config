@@ -1,0 +1,19 @@
+Host *
+    ServerAliveInterval 20
+    ServerAliveCountMax 10
+
+Host ubuntu
+    Hostname 192.168.229.128
+    User techstay
+
+Host rasp
+    Hostname raspberrypi
+    User pi
+
+Host manjaro
+    Hostname 192.168.229.131
+    User techstay
+
+Host arch
+    Hostname 192.168.229.130
+    User techstay

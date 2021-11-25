@@ -1,10 +1,8 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -19,8 +17,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -29,24 +26,19 @@
         }
     ],
     "copyFormatting": "none",
-    "copyOnSelect": false,
+    "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "profiles": 
-    {
-        "defaults": 
-        {
-            "acrylicOpacity": 0.75,
-            "colorScheme": "Campbell",
-            "experimental.retroTerminalEffect": false,
-            "font": 
-            {
-                "face": "MesloLGM NF",
-                "size": 11
+    "focusFollowMouse": true,
+    "launchMode": "default",
+    "profiles": {
+        "defaults": {
+            "acrylicOpacity": 0.80000000000000004,
+            "font": {
+                "face": "MesloLGS NF"
             },
             "useAcrylic": true
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -60,7 +52,6 @@
                 "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
             },
             {
-                "colorScheme": "Campbell Powershell",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
@@ -73,11 +64,6 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "commandline": "ssh arch",
-                "guid": "{1e014656-8b46-4a79-aeaf-106f0b989e2d}",
-                "name": "arch"
-            },
-            {
                 "commandline": "\"%USERPROFILE%\\scoop\\apps\\git\\current\\bin\\bash.exe\" -i -l",
                 "guid": "{f2db9a16-ad00-49df-914a-8d71b94454d4}",
                 "name": "Git Bash",
@@ -86,8 +72,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -295,5 +280,6 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "useAcrylicInTabRow": true
 }

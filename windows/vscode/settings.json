@@ -14,11 +14,15 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "[julia]": {
         //  "editor.defaultFormatter": "julialang.language-julia"
         "editor.defaultFormatter": "singularitti.vscode-julia-formatter"
     },
     "dart.checkForSdkUpdates": false,
+    "dart.flutterSdkPath": "C:\\Users\\asddf\\scoop\\apps\\flutter\\1.12.13-hotfix.9",
     "debug.onTaskErrors": "showErrors",
     "editor.codeActionsOnSave": {
         "source.fixAll": true
@@ -49,10 +53,10 @@
     "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
     "julia.enableTelemetry": true,
     "julia.symbolCacheDownload": true,
-    "kite.showWelcomeNotificationOnStartup": false,
     "latex-workshop.view.pdf.viewer": "tab",
     "markdown-preview-enhanced.liveUpdate": true,
     "powershell.promptToUpdatePowerShell": false,
+    "python.defaultInterpreterPath": "C:\\Users\\techstay\\scoop\\apps\\python\\current\\python.exe",
     "python.languageServer": "Pylance",
     "redhat.telemetry.enabled": true,
     "remote.SSH.defaultExtensions": [
@@ -76,12 +80,12 @@
         "ionutvmi.reg",
         "James-Yu.latex-workshop",
         "julialang.language-julia",
-        "kiteco.kite",
         "mathiasfrohlich.Kotlin",
         "mbessey.vscode-rufo",
         "ms-azuretools.vscode-docker",
         "MS-CEINTL.vscode-language-pack-zh-hans",
         "ms-dotnettools.csharp",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-toolsai.jupyter",
@@ -119,9 +123,13 @@
         "vscode-icons-team.vscode-icons",
         "vscodevim.vim",
         "wingrunr21.vscode-ruby",
-        "wix.vscode-import-cost",
+        "wix.vscode-import-cost"
     ],
     "remote.SSH.remotePlatform": {
+        "arch": "linux",
+        "manjaro": "linux",
+        "rasp": "linux",
+        "ubuntu": "linux"
     },
     "ruby.codeCompletion": "rcodetools",
     "ruby.format": "rubocop",
@@ -133,6 +141,8 @@
         "language-julia.interrupt"
     ],
     "terminal.integrated.enableBell": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 12,
     "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
     "typescript.format.placeOpenBraceOnNewLineForFunctions": false,

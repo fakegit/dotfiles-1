@@ -18,12 +18,12 @@ humao.rest-client
 ionutvmi.reg
 James-Yu.latex-workshop
 julialang.language-julia
-kiteco.kite
 mathiasfrohlich.Kotlin
 mbessey.vscode-rufo
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-zh-hans
 ms-dotnettools.csharp
+ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
