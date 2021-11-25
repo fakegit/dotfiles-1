@@ -122,14 +122,17 @@ winget install --id Microsoft.Powershell --source winget
 - [搜狗输入法](https://pinyin.sogou.com)
 - [Steam](https://store.steampowered.com)
 - [Bluestack国际版](https://www.bluestacks.com)，支持HyperV的安卓模拟器，注意浏览器挂代理，否则可能重定向到国内
+- [potplayer](https://potplayer.daum.net/)，功能强大的免费视频播放器
 
 ### 安装不常用软件
 
 这是一些我不太常用的软件，但是感觉很有用，所以列出来，以后留着。
 
-- [keepass](https://keepass.info/)，开源免费的密码管理器，支持多平台，就是感觉配置起来有点麻烦(可用scoop安装)
+- [keepass](https://keepass.info/)，开源免费的密码管理器，支持多平台，就是感觉配置起来有点麻烦
 - [PaintTool SAI](https://sai.yufan.me)，一个知名的绘图软件，这是国内作者的汉化和学习版网站
 - [Resolve](http://www.blackmagicdesign.com/products/davinciresolve/)，一个视频剪辑软件，有免费版
+- [discord](https://discord.com)
+- [telegram](https://desktop.telegram.org)，汉化补丁链接`https://t.me/setlanguage/classic-zh-cn`
 
 还有一些大型软件安装起来可能比较麻烦，所以另外列出来。
 
