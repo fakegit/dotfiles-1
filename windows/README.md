@@ -172,3 +172,26 @@ scoop install Source-Han-Sans-SC Source-Han-Sans-J Source-Han-Sans-TC
 ### Windows Terminal
 
 [Windows Terminal](wt.md)
+
+### 浏览器扩展
+
+- [LastPass: Free Password Manager - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
+- [Adblock Plus - 免费的广告拦截器 - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb)
+- [Pinterest 收藏按钮 - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/pinterest-save-button/gpdjojdkbbmdfjfahjcgigfpmkopogic)
+- [Tampermonkey - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+- [Wappalyzer - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)
+- [沙拉查词-聚合词典划词翻译 - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/%E6%B2%99%E6%8B%89%E6%9F%A5%E8%AF%8D-%E8%81%9A%E5%90%88%E8%AF%8D%E5%85%B8%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/cdonnmffkdaoajfknoeeecmchibpmkmg)
+- [Proxy SwitchyOmega - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
+- [IP Address Information by IPinfo.io - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/ip-address-information-by/dfdphlgjcfobnklpiiobcfmbdnmihjpo)
+- [JSON Viewer - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
+- [Octotree - GitHub code tree - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc)
+- [SauceNAO Fetcher - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/saucenao-fetcher/eencngjcaepgaaokekpnnabkecpfnchb)
+- [Stylus - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+- [Checker Plus for Gmail™ - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj)
+- [身份验证器 - Chrome 网上应用店 (google.com)](https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai)
+
+Omega配置文件备份地址：
+
+```sh
+https://techstay.life/dotfiles/windows/OmegaOptions.bak
+```
