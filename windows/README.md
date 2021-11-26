@@ -140,6 +140,7 @@ winget install --id Microsoft.Powershell --source winget
 - [Mathematica安装](Mathematica.md)
 - [Adobe系列软件安装](adobe.md)
 - [Visual Studio安装](visual-studio.md)
+- [VMware Workstation 16](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)，密钥`ZF3R0-FHED2-M80TY-8QYGC-NPKYF`
 
 ## 美化配置
 
