@@ -1,0 +1,1 @@
+Get-AppPackage -Name "MicrosoftWindows.Client.WebExperience" -AllUsers | Remove-AppPackage -AllUsers
