@@ -39,19 +39,33 @@ antigen bundle systemd
 antigen bundle ufw
 
 antigen bundle skywind3000/z.lua
+
 antigen bundle Aloxaf/fzf-tab
+# fzf-tab 设置
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
 
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+
 antigen bundle zdharma-continuum/fast-syntax-highlighting
 
 antigen theme romkatv/powerlevel10k
 antigen apply
 
 # your code here
-
+export FZF_DEFAULT_COMMAND='fd --type f'
 alias el='exa -l'
-alias ea='exa -la'
+alias ea='exa -la --icons --header'
 alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
