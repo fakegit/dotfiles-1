@@ -31,7 +31,7 @@
 
 下载镜像和安装系统时候选择商业专业版，批量授权方便激活，使用起来和消费者专业版没有区别。打开管理员权限的终端，输入以下命令即可。
 
-```sh
+```powershell
 # or kms.ddns.net
 slmgr /skms kms.03k.org
 slmgr /ato
@@ -50,7 +50,7 @@ slmgr /ato
 
 试过了Chocolatey和scoop，最后我还是选择了scoop，因为scoop比较干净，所有程序都安装在了主目录的scoop文件夹中，管理非常方便，也没有管理员权限的烦恼。很多开发工具也可以很方便的用scoop来安装。
 
-```sh
+```powershell
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 iwr -useb get.scoop.sh | iex
 
@@ -73,7 +73,7 @@ winget install Microsoft.PowerToys --source winget
 
 现在Windows自带了SSH工具，可以直接安装。当然实际用起来感觉还得配合Git自带的SSH来使用。
 
-```sh
+```powershell
 # Install the OpenSSH Client
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 
@@ -85,7 +85,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 
 这是Win10一来非常好用的开发工具，为啥我一直没用呢，因为我用的安卓模拟器和Hyper-V有冲突，所以一直没有用。不过既然重装了系统，那么就直接一步到位吧。
 
-```sh
+```powershell
 Enable-WindowsOptionalFeature -Online -All -FeatureName "Microsoft-Hyper-V", "Microsoft-Windows-Subsystem-Linux", "HypervisorPlatform", "VirtualMachinePlatform"
 
 wsl --install
@@ -105,11 +105,46 @@ wsl --install
 
 自带的Powershell版本不够新，为了时髦肯定要安装最新版的Powershell。微软商店也可以安装，但是商店版的Powershell有权限问题，所以最好还是直接安装。
 
-```sh
+```powershell
 winget install --id Microsoft.Powershell --source winget
 ```
 
 如果winget下载速度慢，也可以考虑直接去[Powershell 发行页](https://github.com/PowerShell/PowerShell/releases)下载。
+
+#### oh-my-posh
+
+接下来可以安装oh-my-posh来美化Powershell，首先需要输入下面的命令来安装：
+
+```powershell
+Install-Module oh-my-posh -Scope CurrentUser
+```
+
+安装完成后需要编辑Powershell Profile，添加下面的内容：
+
+```powershell
+# 用vscode打开profile
+code $PROFILE
+
+# 在profile中添加内容
+Import-Module oh-my-posh
+Set-PoshPrompt -Theme gmay
+```
+
+主题样式可以在[官网](https://ohmyposh.dev/docs/themes)查看，在当前终端中运行命令可以临时生效，要永久生效的话需要在profile中设置。
+
+#### z.lua
+
+首先在用户家目录克隆z.lua项目。
+
+```powershell
+git clone https://github.com/skywind3000/z.lua.git $HOME/z.lua
+```
+
+然后在powershell profile中添加下面一行。
+
+```powershell
+Invoke-Expression (& { (lua $HOME/z.lua/z.lua --init powershell) -join "`n" })
+```
 
 ### 安装常用软件
 
@@ -152,10 +187,10 @@ winget install --id Microsoft.Powershell --source winget
 - [站酷字体](https://www.zcool.com.cn/special/zcoolfonts/)，几款可商用的字体
 - [更纱黑体](https://www.microsoft.com/zh-cn/p/%E6%9B%B4%E7%BA%B1%E9%BB%91%E4%BD%93/9mw0m424ncz7#activetab=pivot:overviewtab)，微软商店直接下载
 
-一些编程字体，使用scoop安装：
+一些编程字体，使用scoop安装(需要管理员权限)：
 
-```sh
-scoop install Mononoki-NF-Mono victor-mono CodeNewRoman-NF LiberationMono-NF
+```powershell
+scoop install Mononoki-NF-Mono victor-mono CodeNewRoman-NF LiberationMono-NF Meslo-NF-Mono
 
 # 思源宋体
 scoop install Source-Han-Serif-J Source-Han-Serif-SC Source-Han-Serif-TC
@@ -192,6 +227,6 @@ scoop install Source-Han-Sans-SC Source-Han-Sans-J Source-Han-Sans-TC
 
 Omega配置文件备份地址：
 
-```sh
+```url
 https://techstay.life/dotfiles/windows/OmegaOptions.bak
 ```
