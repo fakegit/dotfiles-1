@@ -59,3 +59,7 @@ bash ubuntu_vps_config.sh
 ### snippet
 
 包含了一些常用的配置命令，可以作为参考。
+
+## windows
+
+包含了windows系统和一些软件的配置方法。
