@@ -116,7 +116,7 @@ skip_global_compinit=1
 
 export FZF_DEFAULT_COMMAND='fd --type f'
 
-alias el='exa -l'
+alias el='exa -l --icons'
 alias ea='exa -la --icons --header'
 alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
 
