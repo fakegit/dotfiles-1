@@ -5,3 +5,5 @@
 	filesEncoding = utf-8
 [rerere]
 	enabled = true
+[core]
+	editor = vim
