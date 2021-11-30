@@ -24,6 +24,7 @@ antigen bundle flutter
 antigen bundle gem
 antigen bundle git
 antigen bundle git-auto-fetch
+antigen bundle git-flow-avh
 antigen bundle golang
 antigen bundle gradle
 antigen bundle heroku
@@ -56,6 +57,8 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+# 禁用该选项以加速代码粘贴
+DISABLE_MAGIC_FUNCTIONS=true
 
 antigen bundle zdharma-continuum/fast-syntax-highlighting
 
@@ -64,6 +67,10 @@ antigen apply
 
 # your code here
 export FZF_DEFAULT_COMMAND='fd --type f'
+export BAT_THEME="TwoDark"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
 alias el='exa -l --icons'
 alias ea='exa -la --icons --header'
 alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
