@@ -170,6 +170,16 @@ sudo tee /etc/docker/daemon.json <<EOL
     ]
 }
 EOL
+# 常用docker镜像命令
+docker run --name some-postgres \
+    -e POSTGRES_PASSWORD=12345678 \
+    --rm -p 5432:5432 postgres
+
+docker run --name some-mysql \
+    -e MYSQL_ROOT_PASSWORD=12345678 \
+    --rm -p 3306:3306 mysql
+
+docker run --name some-nginx --rm --network host nginx
 
 #            _
 #           (_)
@@ -194,14 +204,14 @@ echo "$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee "/etc/sudoers.d/$USER"
 
 # 下载Meslo Nerds字体
 mkdir -p ~/.fonts
-cd ~/.fonts
+cd ~/.fonts || exit
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
 unzip Meslo.zip
 rm Meslo.zip
 fc-cache -f
 
 # 配置ohmyzsh
-cd
+cd || exit
 curl -L git.io/antigen >.antigen.zsh
 wget https://raw.githubusercontent.com/techstay/dotfiles/master/zsh/.zshrc
 wget https://raw.githubusercontent.com/techstay/dotfiles/master/zsh/.p10k.zsh
