@@ -31,5 +31,5 @@ EOL
 # -------------------------------
 # 其他软件包
 # -------------------------------
-sudo pacman -S --noconfirm --needed neofetch cowsay sl man-db shellcheck curl vim nano \
-    neovim powerline-vim stow shfmt thefuck ufw nmap fd fzf exa subversion
+sudo pacman -S --noconfirm --needed neofetch cowsay sl man-db shellcheck curl wget vim nano \
+    neovim powerline-vim stow shfmt thefuck ufw nmap fd fzf exa subversion man bat
