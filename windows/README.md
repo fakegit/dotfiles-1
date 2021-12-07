@@ -111,6 +111,14 @@ winget install --id Microsoft.Powershell --source winget
 
 如果winget下载速度慢，也可以考虑直接去[Powershell 发行页](https://github.com/PowerShell/PowerShell/releases)下载。
 
+或者如果你安装了dotnet工具，那么可以使用它来安装。
+
+```powershell
+dotnet tool install --global Powershell
+# 更新
+dotnet tool update --global Powershell
+```
+
 #### oh-my-posh
 
 接下来可以安装oh-my-posh来美化Powershell，首先需要输入下面的命令来安装：
@@ -196,6 +204,8 @@ scoop install Mononoki-NF-Mono victor-mono CodeNewRoman-NF LiberationMono-NF Mes
 scoop install Source-Han-Serif-J Source-Han-Serif-SC Source-Han-Serif-TC
 # 思源黑体
 scoop install Source-Han-Sans-SC Source-Han-Sans-J Source-Han-Sans-TC
+# noto fonts
+scoop install Source-Han-Noto-CJK-Ultra-OTC
 ```
 
 ## 软件配置
