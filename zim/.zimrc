@@ -47,6 +47,5 @@ zmodule ssh
 zmodule pacman
 
 zmodule skywind3000/z.lua --cmd 'export _ZL_HYPHEN=1' --cmd 'eval "$(lua {}/z.lua --init zsh enhanced once)"'
-zmodule Aloxaf/fzf-tab
-# zmodule trapd00r/LS_COLORS --cmd 'sh {}/install.sh' --cmd 'source ~/.local/share/lscolors.sh'
 zmodule romkatv/powerlevel10k --use degit
+zmodule Aloxaf/fzf-tab

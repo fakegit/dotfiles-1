@@ -115,11 +115,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
-#
-# LS_COLORS
-# 
-
-
 
 # ------------------
 # Initialize modules
