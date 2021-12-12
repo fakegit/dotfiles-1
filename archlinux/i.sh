@@ -5,7 +5,7 @@
 # -------------------------------
 sudo pacman -S --noconfirm --needed jdk-openjdk openjdk-doc openjdk-src gradle groovy scala kotlin maven \
     python ruby nodejs ghc typescript autopep8 npm python-pip ruby-bundler \
-    dotnet-sdk lua
+    dotnet-sdk lua go
 
 # -------------------------------
 # 终端相关
