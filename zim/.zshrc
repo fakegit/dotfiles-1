@@ -93,7 +93,7 @@ zstyle ':zim:git' aliases-prefix 'g'
 
 # Set what highlighters will be used.
 # See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets regexp cursor root line)
 
 # Customize the main highlighter styles.
 # See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md#how-to-tweak-it
@@ -169,7 +169,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
 
 # pipx
-export PATH="$PATH:/home/techstay/.local/bin" 
+export PATH="$PATH:~/.local/bin"
 
 eval $(thefuck --alias)
 
